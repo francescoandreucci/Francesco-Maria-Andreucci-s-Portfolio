@@ -1,0 +1,301 @@
+:root {
+  --bg-color: #F3F1E9;
+  --nav-color: #333333;
+  --font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+}
+
+a {
+  color: #333333;
+}
+
+header {
+  background-color: var(--nav-color);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: var(--nav-color);
+}
+
+.header ul a{
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #F3F1E9;
+  text-align: left;
+}
+
+.header ul a:hover{
+  background-color: #e7e7e7;
+  color: #333;
+}
+
+.header .logo{
+  float: left;
+  font-size: 18px;
+  padding: 10px 8px;
+  text-decoration: none;
+  color: #F3F1E9;
+}
+
+.header .menu{
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+  background: #F3F1E9;
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  transition: background-color .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after{
+  background: #F3F1E9;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all .2s ease-out;
+  position: absolute;
+}
+
+.header .menu-icon .nav-icon:before{
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after{
+  top: -5px;
+}
+
+.header .menu-btn{
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+  background-color: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+  transform: rotate(-45deg);
+  top: 0;
+} 
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (min-width: 48em) {
+  .header li{
+    float: left;
+  }
+  .header li a{
+    padding: 20px 30px;
+  }
+  .header .menu{
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon{
+    display: none;
+  }
+}
+
+.hero {
+padding: 2em;
+text-align: left;
+max-width: 1200px;
+}
+
+.main h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: #333;
+}
+
+h1 {
+font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+
+img {
+  width: 350px;
+  height: 350px;
+  float: right;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-left: 10px;
+}
+
+.about {
+  padding: 2em;
+  margin-bottom: 16px;
+}
+
+.about h2 {
+  font-size: 24px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+
+p {
+  font-family: var(--font-family);
+  font-weight: medium;
+  color: #454444;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 900px;
+}
+
+.btn-custom {
+  background-color: #333333;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 18px; 
+  padding: 16px 32px;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; 
+  text-decoration: none;
+}
+
+.btn-custom a {
+  text-decoration: none;
+  color: #F3F1E9;
+}
+
+.btn-custom:hover {
+  background-color: #e7e7e7;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom:active {
+  background-color: #d7d7d7;
+  color: #333; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+}
+
+.btn-custom:focus {
+  background-color: #d7d7d7;
+  color: #333; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  background-color: var(--nav-color);
+  color: #F3F1E9;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  max-width: 100%;
+}
+
+
+/* Responsive design */
+
+
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
