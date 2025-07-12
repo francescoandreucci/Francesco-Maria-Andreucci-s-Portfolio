@@ -10,6 +10,10 @@ body {
   font-family: var(--font-family);
 }
 
+.hero h1, .about h2 {
+    text-align: center !important;;
+}
+
 a {
   color: #333333;
 }
@@ -131,123 +135,220 @@ header {
   }
 }
 
-.hero {
-padding: 2em;
-text-align: left;
-max-width: 1200px;
+.contact-container {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
 }
 
-.main h1, h2, h3, h4, h5, h6 {
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+button {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 20px !important; 
+    background-color: #333333;
+    color: #F3F1E9; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #F3F1E9;
+    color: #333333;
+}
+
+
+.main h1, h2, h3, h4, h5 {
   font-family: var(--font-family);
   font-weight: bold;
   color: #333;
+  text-align: center;
 }
 
 h1 {
-font-size: 36px;
+  font-size: 36px ! important;
+  font-weight: bold ! important;
+  margin-top: 70px ! important;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 28px ! important;
+  font-weight: 600 ! important;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px ! important;
+  font-weight: medium ! important;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px ! important;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 16px ! important;
+  font-weight: bold ! important;
 }
 
-h6 {
-  font-size: 16px;
-}
+ .hero {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 2em, 0, 0 0;
+    padding: 2em;
+    text-align: center;
+    max-width: 100%;
+  }
 
-
-img {
-  width: 350px;
-  height: 350px;
-  float: right;
-  margin-top: 8px;
-  margin-right: 16px;
-  margin-left: 10px;
+.hero .image {
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    height: auto;
+    margin: 0px
 }
 
 .about {
+  text-align: center;
   padding: 2em;
-  margin-bottom: 16px;
 }
-
-.about h2 {
-  font-size: 24px;
-}
-
-.about p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 1em;
-}
-
 
 p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   font-family: var(--font-family);
   font-weight: medium;
   color: #454444;
-  font-size: 16px;
-  line-height: 1.5;
-  max-width: 900px;
+  max-width: 1500px;
 }
 
+.col-up {
+  max-width: 100%;
+}
+
+.col-down {
+  max-width: 100%;
+}
+
+.fas {
+  color: #333333;
+  padding: 8px;
+}
+
+
+.container.mt-5 {
+    background-color: #f8f9fa; 
+    padding: 0px; 
+    max-width: 800px; 
+    margin-bottom: 0px;
+}
+
+.progress { 
+    height: 20px !important;
+    margin-bottom: 20px !important;
+    border-radius: 8px !important;
+    background-color: #F3F1E9 !important;
+    max-width: 100% !important;
+}
+
+.progress-bar {
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center ! important;
+    padding-left: 20px; 
+    text-decoration: white; 
+    border-radius: 8px;
+}
+
+.figma-progress .progress-bar-striped{
+  background-color: blueviolet; 
+}
+
+.htmlecss-progress .progress-bar-striped{
+  background-color:blue;
+}
+
+.adobesuite-progress .progress-bar-striped{
+  background-color: red;
+}
+
+.visualstudiocode-progress .progress-bar-striped{
+  background-color: #f7b500;
+}
+
+.canva-progress .progress-bar-striped{
+  background-color:green;
+}
+
+
+
 .btn-custom {
-  background-color: #333333;
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 18px; 
-  padding: 16px 32px;
-  margin-top: 32px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s; 
-  text-decoration: none;
+  background-color: #333333 ! important;
+  font-family: 'Maven Pro', sans-serif ! important;
+  font-size: 14px ! important; 
+  padding: 16px 32px! important;
+  margin-top: 32px! important;
+  margin-bottom: 10px! important;
+  border: none! important;
+  border-radius: 8px! important;
+  cursor: pointer! important;
+  transition: background-color 0.3s, color 0.3s! important; 
+  text-decoration: none! important;
 }
 
 .btn-custom a {
-  text-decoration: none;
-  color: #F3F1E9;
+  text-decoration: none! important;
+  color: #F3F1E9! important;
 }
 
 .btn-custom:hover {
-  background-color: #e7e7e7;
-  color: #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #e7e7e7 ! important;
+  color: #333 ! important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)! important;
 }
 
 .btn-custom:active {
-  background-color: #d7d7d7;
-  color: #333; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+  background-color: #d7d7d7! important;
+  color: #333! important; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4)! important; 
 }
 
 .btn-custom:focus {
-  background-color: #d7d7d7;
-  color: #333; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background-color: #d7d7d7! important;
+  color: #333! important; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4)! important;
 }
 
 footer {
   background-color: var(--nav-color);
   color: #F3F1E9;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
-  clear: both;
-  max-width: 100%;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 0.5rem;
 }
-
 
 /* Responsive design */
 
@@ -259,14 +360,14 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  img {
+  .hero .img {
     width: 250px;
     height: 250px;
   }
 }
 
 @media (max-width: 768px) {
-  img {
+  .hero .img  {
     width: 150px;
     height: 150px;
   }
@@ -274,28 +375,28 @@ footer {
 
 @media (max-width: 480px) {
 
-.container {
-  display: flex;
-  flex-direction: column;
+.img  {
+  width: 150px;
+  height: 150px;
 }
-
-  img {
-    width: 150px;
-    height: 150px;
-  }
-
 }
 
 @media (max-width: 320px) {
 
-.container {
-  display: flex;
-  flex-direction: column;
-
+.hero .h1 {
+  font-size: 24px;
 }
 
-  img {
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.hero .image {
     width: 150px;
     height: 150px;
-  }
+    max-width: 100%;
+    margin: 10px
+}
 }
