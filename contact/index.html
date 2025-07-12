@@ -4,34 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti</title>
+    <meta name="description" content="Contatti di Francesco Maria Andreucci. E-mail, numero di telefono e modulo di richiesta persnalizzato">
+    <title>Contatti Francesco Maria Andreucci</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico">
 </head>
 <body>
     <header class="header"> 
-        <a href="../index.html" class="logo">Francesco Maria Andreucci's Portfolio</a>
+        <a href="/index.html" class="logo"><img src="../assets/img/favicon/favicon-32x32.png" alt="Logo Portfolio di Francesco Maria Andreucci" style="padding: 5px">Francesco Maria Andreucci's Portfolio</a>
         <input class="menu-btn" id="menu-btn"  type="checkbox"/>
         <label for="menu-btn" class="menu-icon">
             <span class="nav-icon"></span>
         </label>
         <ul class="menu">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../cv/index.html">CV</a></li>
+            <li><a href="/cv/index.html">CV</a></li>
             <li><a href="index.html">Contattami</a></li>
             <li><a href="projects.html">Progetti</a></li>
         </ul>
     </header>
     <main>
     <section class="hero">
-        <h1>Contattami</h1>
+    <h1>Contattami</h1>
     </section>
     <section class="about">
     <p> Grazie per aver visitato il mio Portfolio, mi piace essere sempre disponibile per ogni evenienza,<br> sia per collaborazione o semplicemente una domanda o per conoscenza - fare networking va sempre bene.</p>
     <p>Per qualsiasi informazione o richiesta, puoi compilare il seguente form: <a href="https://forms.gle/pUwPFMixcTEtEad58">richiesta informazioni</a></p>
     </section>
+    <div class="contact-container">
+    <h2>Contattami</h2>
+    <form id="contact-form" action="mailto:tuoemail@example.com" method="post" enctype="text/plain">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Messaggio:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Invia</button>
+    </form>
+</div>
+
 </body>
 </main>
 <footer>
-    <p> 2025 Francesco Maria Andreucci's Portfolio</p>
+    <copy>2025 Francesco Maria Andreucci's Portfolio</copy>
 </footer>
 </html>
