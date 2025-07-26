@@ -8,6 +8,7 @@ body {
   margin: 0;
   background-color: var(--bg-color) ! important;
   font-family: var(--font-family);
+  text-align: center ! important;
 }
 
 .hero h1, .about h2 {
@@ -18,7 +19,7 @@ a {
   color: #333333;
 }
 
-header {
+.header {
   background-color: var(--nav-color);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -212,7 +213,6 @@ h5 {
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    padding: 2em, 0, 0 0;
     padding: 2em;
     text-align: center;
     max-width: 100%;
@@ -222,7 +222,6 @@ h5 {
     width: 350px;
     height: 350px;
     max-width: 100%;
-    height: auto;
     margin: 0px
 }
 
@@ -353,50 +352,35 @@ footer {
 /* Responsive design */
 
 
-@media (max-width: 480px) {
-  .hero {
-    height: 50vh;
-  }
-}
-
 @media (max-width: 1200px) {
-  .hero .img {
+  .hero .image {
     width: 250px;
     height: 250px;
   }
 }
 
 @media (max-width: 768px) {
-  .hero .img  {
+  .hero .image  {
     width: 150px;
     height: 150px;
   }
 }
 
 @media (max-width: 480px) {
-
-.img  {
+.hero .image  {
   width: 150px;
   height: 150px;
 }
 }
 
 @media (max-width: 320px) {
-
 .hero .h1 {
-  font-size: 24px;
+  font-size: 24px ! important;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.hero .image {
+.hero .image{
     width: 150px;
     height: 150px;
     max-width: 100%;
-    margin: 10px
 }
 }
